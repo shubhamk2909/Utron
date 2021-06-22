@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+	<title>Car Spec</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+		<link rel="icon" href="./img/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
+	<!-- Style -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:900,800,700,600,500,400,300,200,100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/tailwind.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="tracking-wide">
+	<!-- Header -->
+	<header class="py-3 bg-white shadow-xl sticky top-0 z-50 border-b-2 border-t-2 border-transparent lg:border-0">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="flex items-center -mx-2">
+				
+					<!-- Logo -->
+					<a href="index.html" class="inline-block text-4xl font-extrabold"><img src="./logo.png" style="height: 100px; width: 190px;"></a>
+					<!-- Logo -->
+				
+				<div class="order-1 lg:order-2 flex-1 lg:flex-grow px-2">
+					<!-- Nav -->
+					<nav id="Nav" class="fixed inset-0 lg:static hidden lg:block">
+						<!-- Close-Nav -->
+						<span id="closeNav" class="lg:hidden absolute inset-0 bg-black bg-opacity-80"></span>
+						<!-- Close-Nav -->
+						<ul class="bg-white lg:bg-transparent lg:flex lg:items-center lg:justify-end h-full lg:h-auto relative z-10 w-64 sm:w-72 lg:w-full py-4 px-2 lg:p-0">
+							<li class="dropdown-hover relative">
+								<a href="products.html" class="block text-base font-medium hover:text-blue-600 transition duration-200 ease-in-out py-3 px-4 rounded-xl hover:bg-gray-100">Our Cars</a>
+								<div class="dropdown-content-hover invisible opacity-0 absolute right-0 z-10 pt-2 transition duration-200 ease-in-out hidden lg:inline-block">
+									<ul class="bg-black rounded-2xl p-2 text-white w-72 shadow-xl border border-white border-opacity-10">
+										<li>
+											<a href="hatchback.html" class="block py-3 px-4 rounded-xl text-base hover:bg-white hover:bg-opacity-20">Hatchback</a>
+										</li>
+										<li>
+											<a href="coupe.html" class="block py-3 px-4 rounded-xl text-base hover:bg-white hover:bg-opacity-20">Coupe</a>
+										</li>
+										<li>
+											<a href="saloon.html" class="block py-3 px-4 rounded-xl text-base hover:bg-white hover:bg-opacity-20">Saloon</a>
+										</li>
+										<li>
+											<a href="suv.html" class="block py-3 px-4 rounded-xl text-base hover:bg-white hover:bg-opacity-20">SUV</a>
+										</li>
+										<li>
+											<a href="mpv.html" class="block py-3 px-4 rounded-xl text-base hover:bg-white hover:bg-opacity-20">MPV</a>
+										</li>
+										<li>
+											<a href="estate.html" class="block py-3 px-4 rounded-xl text-base hover:bg-white hover:bg-opacity-20">Estate</a>
+										</li>
+										<li>
+											<a href="convertible.html" class="block py-3 px-4 rounded-xl text-base hover:bg-white hover:bg-opacity-20">Convertible</a>
+										</li>
+										<!-- ... -->
+									</ul>
+								</div>
+							</li>
+							<li class="dropdown-hover relative">
+								<a href="press.html" class="block text-base font-medium hover:text-blue-600 transition duration-200 ease-in-out py-3 px-4 rounded-xl hover:bg-gray-100">News</a>
+							</li>
+							<li class="dropdown-hover relative">
+								<a href="partner.html" class="block text-base font-medium hover:text-blue-600 transition duration-200 ease-in-out py-3 px-4 rounded-xl hover:bg-gray-100">Partner</a>
+							</li>
+							<li class="dropdown-hover relative">
+								<a href="about-us.html" class="block text-base font-medium hover:text-blue-600 transition duration-200 ease-in-out py-3 px-4 rounded-xl hover:bg-gray-100">About Us</a>
+							</li>
+							<li class="dropdown-hover relative">
+								<a href="press.html" class="block text-base font-medium hover:text-blue-600 transition duration-200 ease-in-out py-3 px-4 rounded-xl hover:bg-gray-100">Gallery</a>
+							</li>
+							<!-- ... -->
+						</ul>
+					</nav>
+					<!-- Nav -->
+
+					<!-- Open-Nav -->
+					<div class="lg:hidden">
+						<button id="openNav" class="w-12 h-12 flex items-center justify-center hover:text-white bg-gray-100 hover:bg-blue-600 rounded-full hover:bg-blue-700 transition duration-200 ease-in-out">
+							<svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+							</svg>
+						</button>
+					</div>
+					<!-- Open-Nav -->
+				</div>
+				<div class="order-3 flex-1 lg:flex-grow-0 px-2 flex justify-end">
+					<!-- Call-Btn -->
+					<a href="contact-us.html" class="hidden lg:inline-block whitespace-nowrap px-8 py-3 rounded-xl font-medium text-lg bg-blue-600 hover:bg-blue-700 text-white transition duration-200 ease-in-out">Contact Us</a>
+					<a href="contacts-us.html" class="w-12 h-12 flex lg:hidden items-center justify-center text-white bg-blue-600 hover:bg-blue-700 rounded-full hover:bg-blue-700 transition duration-200 ease-in-out">
+						<svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+						</svg>
+					</a>
+					<!-- Call-Btn -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header -->
+
+	<!-- Main -->
+	<main>
+		<!-- Slider -->
+		<section class="bg-black relative overflow-hidden">
+			<!-- Cosmos -->
+			<div id="large-header" class="slider_canvas absolute inset-0">
+        <canvas id="demo-canvas"></canvas>
+      </div>
+			<!-- Cosmos -->
+
+			<div class="max-w-7xl mx-auto px-4 relative">
+				<!-- Item -->
+				<div class="animatedParent animateOnce slider-home-item md:flex md:items-center md:-mx-4 py-6 text-center md:text-left">
+					<div class="animated fadeInLeft md:flex-1 px-4 py-6 sm:py-8 lg:py-10">
+						<!-- Text -->
+						<h1 class="font-bold text-white" style="font-size: 10vmin;">EP9 by NIO </h1>
+						<p class="text-base sm:text-xl lg:text-3xl text-white mt-4 lg:mt-6">No-contact operations,<br>safety means everything</p>
+						<!-- Text -->
+					</div>
+					<div class="animated fadeInRight md:w-72 px-4 py-6">
+						<!-- Img -->
+						<img class="w-full max-w-xs mx-auto" src="img/landing/puductor-2/es6.mp4" alt="" title="">
+						<!-- Img -->
+					</div>
+				</div>
+				<!-- Item -->
+			</div>
+		</section>
+		<!-- Slider -->
+
+		<!-- Features -->
+		<section class="py-12 md:py-16 lg:py-24 bg-gray-100 relative z-20 overflow-hidden">
+			<!-- Effet-Line -->
+			<div class="flex justify-around absolute inset-0">
+				<div class="w-px border-r border-white border-opacity-70"></div>
+				<div class="w-px border-r border-white border-opacity-70"></div>
+				<div class="w-px border-r border-white border-opacity-70"></div>
+				<div class="w-px border-r border-white border-opacity-70 hidden md:flex"></div>
+				<div class="w-px border-r border-white border-opacity-70 hidden lg:flex"></div>
+				<div class="w-px border-r border-white border-opacity-70 hidden xl:flex"></div>
+			</div>
+			<!-- Effet-Line -->
+			<div class="max-w-7xl mx-auto px-4 relative z-10">
+				<!-- Text -->
+				<div class="animatedParent animateOnce">
+					<div class="animated fadeIn max-w-4xl mx-auto text-center">
+						<h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold lg:font-extrabold">Features</h2>
+						<p class="text-base sm:text-lg lg:text-xl text-gray-500 mt-2 xl:mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+				<!-- Text -->
+
+				<!-- Items -->
+				<div class="animatedParent animateOnce flex flex-wrap justify-center -mx-4 md:mt-8 text-center">
+					<div class="animated fadeInUp w-1/2 md:w-1/3 lg:w-1/4 px-4 mt-8">
+						<!-- Item -->
+						<div class="bg-white rounded-3xl px-4 py-6 h-full flex flex-col items-center justify-center">
+							<img class="w-10" src="img/landing/puductor-2/features/1.svg" alt="" title="">
+	  					<p class="text-base text-gray-500 mt-2">2L/H Ultrasonic Dry Mist Disinfection</p>
+	  				</div>
+						<!-- Item -->
+					</div>
+					<div class="animated fadeInUp w-1/2 md:w-1/3 lg:w-1/4 px-4 mt-8">
+						<!-- Item -->
+						<div class="bg-white rounded-3xl px-4 py-6 h-full flex flex-col items-center justify-center">
+							<img class="w-10" src="img/landing/puductor-2/features/2.svg" alt="" title="">
+	  					<p class="text-base text-gray-500 mt-2">180μW/cm² UV-C Disinfection</p>
+	  				</div>
+						<!-- Item -->
+					</div>
+					<div class="animated fadeInUp w-1/2 md:w-1/3 lg:w-1/4 px-4 mt-8">
+						<!-- Item -->
+						<div class="bg-white rounded-3xl px-4 py-6 h-full flex flex-col items-center justify-center">
+							<img class="w-10" src="img/landing/puductor-2/features/3.svg" alt="" title="">
+	  					<p class="text-base text-gray-500 mt-2">Max 6H Disinfection Time</p>
+	  				</div>
+						<!-- Item -->
+					</div>
+					<div class="animated fadeInUp w-1/2 md:w-1/3 lg:w-1/4 px-4 mt-8">
+						<!-- Item -->
+						<div class="bg-white rounded-3xl px-4 py-6 h-full flex flex-col items-center justify-center">
+							<img class="w-10" src="img/landing/puductor-2/features/4.svg" alt="" title="">
+	  					<p class="text-base text-gray-500 mt-2">15L Reservoir Capacity</p>
+	  				</div>
+						<!-- Item -->
+					</div>
+					<div class="animated fadeInUp w-1/2 md:w-1/3 lg:w-1/4 px-4 mt-8">
+						<!-- Item -->
+						<div class="bg-white rounded-3xl px-4 py-6 h-full flex flex-col items-center justify-center">
+							<img class="w-10" src="img/landing/puductor-2/features/5.svg" alt="" title="">
+	  					<p class="text-base text-gray-500 mt-2">360° Sterilization</p>
+	  				</div>
+						<!-- Item -->
+					</div>
+					<div class="animated fadeInUp w-1/2 md:w-1/3 lg:w-1/4 px-4 mt-8">
+						<!-- Item -->
+						<div class="bg-white rounded-3xl px-4 py-6 h-full flex flex-col items-center justify-center">
+							<img class="w-10" src="img/landing/puductor-2/features/6.svg" alt="" title="">
+	  					<p class="text-base text-gray-500 mt-2">Boil-dry Protection and Low-level Warning</p>
+	  				</div>
+						<!-- Item -->
+					</div>
+					<div class="animated fadeInUp w-1/2 md:w-1/3 lg:w-1/4 px-4 mt-8">
+						<!-- Item -->
+						<div class="bg-white rounded-3xl px-4 py-6 h-full flex flex-col items-center justify-center">
+							<img class="w-10" src="img/landing/puductor-2/features/7.svg" alt="" title="">
+	  					<p class="text-base text-gray-500 mt-2">Automatic Localization and Navigation System</p>
+	  				</div>
+						<!-- Item -->
+					</div>
+					<div class="animated fadeInUp w-1/2 md:w-1/3 lg:w-1/4 px-4 mt-8">
+						<!-- Item -->
+						<div class="bg-white rounded-3xl px-4 py-6 h-full flex flex-col items-center justify-center">
+							<img class="w-10" src="img/landing/puductor-2/features/8.svg" alt="" title="">
+	  					<p class="text-base text-gray-500 mt-2">Automatic Lift Control</p>
+	  				</div>
+						<!-- Item -->
+					</div>
+					<!-- ... -->
+				</div>
+				<!-- Items -->
+			</div>
+		</section>
+		<!-- Features -->
+
+		<!-- About -->
+		<section class="overflow-hidden py-12 md:py-16 lg:py-24 relative">
+			<!-- Effet-Line -->
+			<div class="flex justify-around absolute inset-0">
+				<div class="w-px border-r border-gray-200 border-opacity-70"></div>
+				<div class="w-px border-r border-gray-200 border-opacity-70"></div>
+				<div class="w-px border-r border-gray-200 border-opacity-70"></div>
+				<div class="w-px border-r border-gray-200 border-opacity-70 hidden md:flex"></div>
+				<div class="w-px border-r border-gray-200 border-opacity-70 hidden lg:flex"></div>
+				<div class="w-px border-r border-gray-200 border-opacity-70 hidden xl:flex"></div>
+			</div>
+			<!-- Effet-Line -->
+			<div class="max-w-7xl mx-auto px-4 relative z-10">
+				<div class="flex flex-wrap items-center -mx-4">
+					<div class="animatedParent animateOnce w-full lg:order-2 lg:w-5/12 px-4">
+						<!-- Text -->
+						<div class="animated fadeInRight max-w-lg xl:pl-10">
+							<h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold lg:font-extrabold leading-snug">Automatic Mode Specifications</h2>
+							<ol class=" mt-4 lg:mt-6">
+								<li class="text-base sm:text-lg lg:text-xl mt-4">1. The staff checks the capacity of the disinfectant solution.</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">2. The staff sets disinfection tasks.</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">- Cruise Mode: total disinfection time，driving path and disinfection method</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">- Fixed-point Mode: single point/multi-point disinfection and disinfection method</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">3. Puductor 2 automatically reaches the initial point of work.</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">4. Puductor 2 begins to count down, and notifies people to stay away from the disinfection areas.</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">5. Puductor 2 completes the task as programmed or the staff terminates the task remotely.</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">6. Puductor 2 automatically returns to the charging dock.</li>
+							</ol>
+						</div>
+						<!-- Text -->
+					</div>
+					<div class="animatedParent animateOnce w-full lg:order-1 lg:w-7/12 px-4 mt-8 lg:mt-0">
+						<!-- Image -->
+						<div class="animated fadeInLeft bg-black rounded-3xl px-6 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24">
+							<img class="w-full rounded-3xl block" src="img/landing/puductor-2/workflow/ep9.jpg" alt="" title="">
+						</div>
+						<!-- Image -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About -->
+
+		<!-- About -->
+		<section class="py-12 md:py-16 lg:py-24 bg-gray-100 relative overflow-hidden">
+			<!-- Effet-Line -->
+			<div class="flex justify-around absolute inset-0">
+				<div class="w-px border-r border-white border-opacity-70"></div>
+				<div class="w-px border-r border-white border-opacity-70"></div>
+				<div class="w-px border-r border-white border-opacity-70"></div>
+				<div class="w-px border-r border-white border-opacity-70 hidden md:flex"></div>
+				<div class="w-px border-r border-white border-opacity-70 hidden lg:flex"></div>
+				<div class="w-px border-r border-white border-opacity-70 hidden xl:flex"></div>
+			</div>
+			<!-- Effet-Line -->
+			<div class="max-w-7xl mx-auto px-4 relative z-10">
+				<div class="animatedParent animateOnce flex flex-wrap items-center -mx-4">
+					<div class="animated fadeInLeft w-full lg:w-5/12 px-4">
+						<!-- Text -->
+						<div class="max-w-lg xl:pr-10">
+							<h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold lg:font-extrabold leading-snug">Manual Mode Specifications</h2>
+							<ol class=" mt-4 lg:mt-6">
+								<li class="text-base sm:text-lg lg:text-xl mt-4">1. The staff manually pushes the Puductor 2 to the disinfection point.</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">2. The staff checks the capacity of the disinfectant solution.</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">3. The staff sets disinfection tasks (total disinfection time, disinfection method).</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">4. Puductor2 begins to count down, and notifies people to stay away from the disinfection areas.</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">5. Puductor 2 completes the task as programmed or the staff terminates the task remotely.</li>
+								<li class="text-base sm:text-lg lg:text-xl mt-4">6. The staff manually pushes Puductor 2 back to the charging dock.</li>
+							</ol>
+						</div>
+						<!-- Text -->
+					</div>
+					<div class="animated fadeInRight w-full lg:w-7/12 px-4 mt-8 lg:mt-0">
+						<!-- Image -->
+						<div class="bg-black rounded-3xl px-6 md:px-8 lg:px-12 py-12 md:py-16 lg:py-24">
+							<img class="w-full rounded-3xl block" src="img/landing/puductor-2/workflow/ep9.jpg" alt="" title="">
+						</div>
+						<!-- Image -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About -->
+
+		<!-- specifications -->
+		<section class="bg-black relative py-12 md:py-16 lg:py-24 border-b border-white border-opacity-10 overflow-hidden">
+			<div class="max-w-7xl mx-auto px-4 relative z-10">
+				<div class="animatedParent animateOnce flex flex-wrap items-center -mx-4">
+					<div class="animated fadeInLeft w-full lg:w-1/2 px-4">
+						<!-- Img -->
+						<img class="w-full max-w-sm block mx-auto" src="img/landing/puductor-2/ep9.jpg" alt="" title="">
+						<!-- Img -->
+					</div>
+					<div class="animated fadeInRight w-full lg:w-1/2 px-4 mt-8 lg:mt-0">
+						<!-- Text -->
+						<h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold lg:font-extrabold text-white">Specifications</h2>
+						<ul class="text-gray-300 mt-6 lg:mt-8">
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Machine Dimension</strong>
+								<span class="flex-1 text-base sm:text-lg">544x538x1290mm</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Machine Weight</strong>
+								<span class="flex-1 text-base sm:text-lg">60kg</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Battery Capacity</strong>
+								<span class="flex-1 text-base sm:text-lg">51.2Ah</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Reservoir Capacity</strong>
+								<span class="flex-1 text-base sm:text-lg">15L</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Irradiation Intensity at one meter distance</strong>
+								<span class="flex-1 text-base sm:text-lg">180 μW/cm² , UV-C(254nm)</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Disinfection Time</strong>
+								<span class="flex-1 text-base sm:text-lg">Max 6H (Replaceable Battery)</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Cruise Speed</strong>
+								<span class="flex-1 text-base sm:text-lg">0.1-1.2m/s （Adjustable</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Disinfectant Solution</strong>
+								<span class="flex-1 text-base sm:text-lg">Hydrogen Peroxide( H2O2)，Hypochlorous Acid( HClO)，Chlorine Dioxide(ClO₂)，etc.</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Average Power Output</strong>
+								<span class="flex-1 text-base sm:text-lg">150W</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Working Voltage</strong>
+								<span class="flex-1 text-base sm:text-lg">24V</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Atomization Rate</strong>
+								<span class="flex-1 text-base sm:text-lg">4 levels(adjustable)</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">UV-C Lamp Protector</strong>
+								<span class="flex-1 text-base sm:text-lg">Yes</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Solution Inlet& Outlet</strong>
+								<span class="flex-1 text-base sm:text-lg">Yes</span>
+							</li>
+							<li class="flex mt-4">
+								<strong class="flex-1 text-base sm:text-lg mr-2">Max Climbing Angle</strong>
+								<span class="flex-1 text-base sm:text-lg">5°</span>
+							</li>
+							<!-- ... -->
+						</ul>
+						<a href="contact-us.html" class="inline-block px-6 py-2 md:px-8 md:py-3 rounded-lg md:rounded-xl font-medium text-base md:text-lg border-2 border-transparent bg-blue-600 hover:bg-blue-700 text-white transition duration-200 ease-in-out mt-6 lg:mt-8">Order now</a>
+						<!-- Text -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- specifications -->
+
+				<!-- Customer-Value -->
+				<section class="py-12 md:py-16 lg:py-24 bg-gray-100 relative overflow-hidden">
+					<!-- Effet-Line -->
+					<div class="flex justify-around absolute inset-0">
+						<div class="w-px border-r border-white border-opacity-70"></div>
+						<div class="w-px border-r border-white border-opacity-70"></div>
+						<div class="w-px border-r border-white border-opacity-70"></div>
+						<div class="w-px border-r border-white border-opacity-70 hidden md:flex"></div>
+						<div class="w-px border-r border-white border-opacity-70 hidden lg:flex"></div>
+						<div class="w-px border-r border-white border-opacity-70 hidden xl:flex"></div>
+					</div>
+					<!-- Effet-Line -->
+					<div class="max-w-7xl mx-auto px-4 relative z-10">
+						<!-- Text -->
+						<div class="animatedParent animateOnce">
+							<div class="animated fadeIn max-w-4xl mx-auto text-center">
+								<h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold lg:font-extrabold leading-snug">Customer Reviews</h2>
+								<p class="text-base sm:text-lg lg:text-xl text-gray-500 mt-2 xl:mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<!-- Text -->
+
+						<!-- Items -->
+						<div class="animatedParent animateOnce flex flex-wrap justify-center -mx-4 md:mt-8">
+							<div class="animated fadeInUp w-full sm:w-1/2 lg:w-1/3 px-4 mt-8">
+								<!-- Item -->
+								<figure class="bg-white rounded-3xl overflow-hidden transition duration-500 ease-in-out transform md:hover:scale-105 h-full">
+									<div class="bg-center bg-cover bg-no-repeat" style="background-image: url(img/landing/puductor-2/customer-value/1.png); padding-top:50%;"></div>
+									<div class="px-6 py-8">
+										<figcaption class="text-base  sm:text-lg lg:text-xl font-light uppercase">Enhanced Patient Safety with UV-C And Dry Mist Disinfection</figcaption>
+										<p class="text-base text-gray-500 mt-2">Cross infection in hospitals is a serious topic in the healthcare sector. Millions of patients are exposed to risk of infections during hospitalization each year and thousands of patients lose their lives.</p>
+									</div>
+								</figure>
+								<!-- Item -->
+							</div>
+							<div class="animated fadeInUp w-full sm:w-1/2 lg:w-1/3 px-4 mt-8">
+								<!-- Item -->
+								<figure class="bg-white rounded-3xl overflow-hidden transition duration-500 ease-in-out transform md:hover:scale-105 h-full">
+									<div class="bg-center bg-cover bg-no-repeat" style="background-image: url(img/landing/puductor-2/customer-value/2.png); padding-top:50%;"></div>
+									<div class="px-6 py-8">
+										<figcaption class="text-base  sm:text-lg lg:text-xl font-light uppercase">Non-chemical disinfection of surfaces</figcaption>
+										<p class="text-base text-gray-500 mt-2">Protects both young students and college campuses from the risk of cross infections. Creating a healthy and safe environment for learning.</p>
+									</div>
+								</figure>
+								<!-- Item -->
+							</div>
+							<div class="animated fadeInUp w-full sm:w-1/2 lg:w-1/3 px-4 mt-8">
+								<!-- Item -->
+								<figure class="bg-white rounded-3xl overflow-hidden transition duration-500 ease-in-out transform md:hover:scale-105 h-full">
+									<div class="bg-center bg-cover bg-no-repeat" style="background-image: url(img/landing/puductor-2/customer-value/3.png); padding-top:50%;"></div>
+									<div class="px-6 py-8">
+										<figcaption class="text-base  sm:text-lg lg:text-xl font-light uppercase">Efficient Government Operations Under COVID-19</figcaption>
+										<p class="text-base text-gray-500 mt-2">Puductor 2 helps protect both government agency workers and citizens from the risk of infection and any other potential bacterial diseases.</p>
+									</div>
+								</figure>
+								<!-- Item -->
+							</div>
+							<div class="animated fadeInUp w-full sm:w-1/2 lg:w-1/3 px-4 mt-8">
+								<!-- Item -->
+								<figure class="bg-white rounded-3xl overflow-hidden transition duration-500 ease-in-out transform md:hover:scale-105 h-full">
+									<div class="bg-center bg-cover bg-no-repeat" style="background-image: url(img/landing/puductor-2/customer-value/4.png); padding-top:50%;"></div>
+									<div class="px-6 py-8">
+										<figcaption class="text-base  sm:text-lg lg:text-xl font-light uppercase">Stay Safe During Travel</figcaption>
+										<p class="text-base text-gray-500 mt-2">The Puductor 2 can disinfect large areas such as airports and other transportation hubs. Keep travelers safe by having a clean environment during transit.</p>
+									</div>
+								</figure>
+								<!-- Item -->
+							</div>
+							<div class="animated fadeInUp w-full sm:w-1/2 lg:w-1/3 px-4 mt-8">
+								<!-- Item -->
+								<figure class="bg-white rounded-3xl overflow-hidden transition duration-500 ease-in-out transform md:hover:scale-105 h-full">
+									<div class="bg-center bg-cover bg-no-repeat" style="background-image: url(img/landing/puductor-2/customer-value/5.png); padding-top:50%;"></div>
+									<div class="px-6 py-8">
+										<figcaption class="text-base  sm:text-lg lg:text-xl font-light uppercase">Safe Entertainment Environment</figcaption>
+										<p class="text-base text-gray-500 mt-2">Puductor 2 is a reliable disinfection robot. With both UV-C and dry mist disinfection modes, it ensures a safe and virus free environment for places like movie theaters and arcades.</p>
+									</div>
+								</figure>
+								<!-- Item -->
+							</div>
+							<div class="animated fadeInUp w-full sm:w-1/2 lg:w-1/3 px-4 mt-8">
+								<!-- Item -->
+								<figure class="bg-white rounded-3xl overflow-hidden transition duration-500 ease-in-out transform md:hover:scale-105 h-full">
+									<div class="bg-center bg-cover bg-no-repeat" style="background-image: url(img/landing/puductor-2/customer-value/6.png); padding-top:50%;"></div>
+									<div class="px-6 py-8">
+										<figcaption class="text-base  sm:text-lg lg:text-xl font-light uppercase">Protect Employees And Your Business</figcaption>
+										<p class="text-base text-gray-500 mt-2">Protect your employees and office perimeters in order to keep business in operation.</p>
+									</div>
+								</figure>
+								<!-- Item -->
+							</div>
+							<!-- ... -->
+						</div>
+						<!-- Items -->
+					</div>
+				</section>
+				<!-- Customer-Value -->
+
+	</main>
+	<!-- Main -->
+
+	<!-- Footer -->
+	<footer class="animatedParent animateOnce">
+		<!-- Footer-Bottom -->
+		<section class="animated fadeIn bg-black">
+			<div class="max-w-7xl mx-auto px-4 py-12">
+				<div class="flex flex-wrap -mx-4">
+					<div class="w-full sm:w-1/2 lg:w-1/4 px-4 my-8">
+						<!-- Logo -->
+						<a href="index.html"><img src="./logo.png" style="height: 80px; width: 160px;"></a>
+						<!-- Logo -->
+						<p class="text-gray-300 mt-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					</div>
+					<div class="w-full sm:w-1/2 lg:w-1/4 px-4 my-8">
+						<!-- Item -->
+						<div class="flex items-center">
+							<span class="border-t-2 border-white w-6 mr-4"></span>
+							<h5 class="text-base sm:text-lg lg:text-xl font-light uppercase text-white">Our Cars</h5>
+						</div>
+						<ul class="text-white pl-10">
+							<li class="mt-4">
+								<a href="hatchback.html" class="text-base hover:underline hover:text-white">Hatchback</a>
+							</li>
+							<li class="mt-4">
+								<a href="saloon.html" class="text-base hover:underline hover:text-white">Saloon</a>
+							</li>
+							<li class="mt-4">
+								<a href="coupe.html" class="text-base hover:underline hover:text-white">Coupe</a>
+							</li>
+							<li class="mt-4">
+								<a href="suv.html" class="text-base hover:underline hover:text-white">SUV</a>
+							</li>
+							<li class="mt-4">
+								<a href="mpv.html" class="text-base hover:underline hover:text-white">MPV</a>
+							</li>
+							<li class="mt-4">
+								<a href="estate.html" class="text-base hover:underline hover:text-white">Estate</a>
+							</li>
+							<li class="mt-4">
+								<a href="convertible.html" class="text-base hover:underline hover:text-white">Convertible</a>
+							</li>
+							<!-- ... -->
+						</ul>
+						<!-- Item -->
+					</div>
+					<div class="w-full sm:w-1/2 lg:w-1/4 px-4 my-8">
+						<!-- Item -->
+						<div class="flex items-center">
+							<span class="border-t-2 border-white w-6 mr-4"></span>
+							<h5 class="text-base sm:text-lg lg:text-xl font-light uppercase text-white">Information</h5>
+						</div>
+						<ul class="text-white pl-10">
+							<li class="mt-4">
+								<a href="about-us.html" class="text-base hover:underline hover:text-white">About Us</a>
+							</li>
+							<li class="mt-4">
+								<a href="press.html" class="text-base hover:underline hover:text-white">Press</a>
+							</li>
+							<li class="mt-4">
+								<a href="gallery.html" class="text-base hover:underline hover:text-white">Gallery</a>
+							</li>
+							<li class="mt-4">
+								<a href="contact-us.html" class="text-base hover:underline hover:text-white">Contacts</a>
+							</li>
+							<!-- ... -->
+						</ul>
+						<!-- Item -->
+					</div>
+					<div class="w-full sm:w-1/2 lg:w-1/4 px-4 my-8">
+						<!-- Item -->
+						<div class="flex items-center">
+							<span class="border-t-2 border-white w-6 mr-4"></span>
+							<h5 class="text-base sm:text-lg lg:text-xl font-light uppercase text-white">Contacts</h5>
+						</div>
+						<ul class="text-white">
+							<li class="flex mt-4">
+								<svg class="w-6 h-6 mr-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+								</svg>
+								<div class="flex-1">
+									<strong class="text-base text-gray-300 block font-normal">Phone</strong>
+									<a href="tel:+35316853710" class="text-base hover:underline">+353 1 685 3710</a>
+								</div>
+							</li>
+							<li class="flex mt-4">
+								<svg class="w-6 h-6 mr-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+								</svg>
+								<div class="flex-1">
+									<strong class="text-base text-gray-300 block font-normal">Email</strong>
+									<ul>
+										<li>
+											<a href="mailto:info@utron.ie" class="text-base hover:underline">info@utron.ie</a>
+										</li>
+										<li>
+											<a href="mailto:sales@utron.ie" class="text-base hover:underline">sales@utron.ie</a>
+										</li>
+										<li>
+											<a href="mailto:accounts@utron.ie" class="text-base hover:underline">accounts@utron.ie</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="flex mt-4">
+								<svg class="w-6 h-6 mr-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+								  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+								</svg>
+								<div class="flex-1">
+									<strong class="text-base text-gray-300 block font-normal">Address</strong>
+									<p class="font-semibold"></p>
+									<a href="https://www.google.com/maps/search/Unit+3+Newlands+Cross+Retail+Centre,+Clondalkin+Dublin,+Ireland+D22T621/@53.3142817,-6.3940713,17z/data=!3m1!4b1" class="text-base hover:underline">Unit 3 Newlands Cross Retail Centre, Clondalkin Dublin, Ireland D22T621</a>
+								</div>
+							</li>
+							<!-- ... -->
+						</ul>
+						<!-- Item -->
+					</div>
+					<!-- ... -->
+				</div>
+			</div>
+			<div class="max-w-7xl mx-auto px-4">
+				<div class="border-t border-white border-opacity-10"></div>
+			</div>
+			<div class="max-w-7xl mx-auto px-4 py-3">
+				<div class="md:flex md:flex-wrap md:items-center md:-mx-3">
+					<div class="md:flex-grow md:px-3 py-1">
+						<!-- Copyright -->
+						<p class="text-gray-300 text-base my-1 text-center md:text-left">Copyright © 2021 <a href="http://utron.ie" class="hover:underline text-base font-semibold text-white">utron.ie</a> - All rights reserved. <!-- Developed by <a href="https://www.dancristian.site" class="hover:underline text-base font-semibold text-white">Dan-Cristian</a> --></p>
+						<!-- Copyright -->
+					</div>
+					<div class="md:flex-grow-0 md:px-3 py-1">
+						<!-- Social-footer -->
+						<ul class="flex flex-wrap justify-center items-center -mx-1">
+							<li class="px-1 my-1">
+								<a href="https://www.facebook.com/Utron-111425887707315" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-blue-600 transition duration-200 ease-in-out">
+									<img class="w-4" src="img/social/facebook.svg" alt="" title="">
+								</a>
+							</li>
+							<li class="px-1 my-1">
+								<a href="https://www.instagram.com/utron.ie/" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-blue-600 transition duration-200 ease-in-out">
+									<img class="w-4" src="img/social/instagram.svg" alt="" title="">
+								</a>
+							</li>
+							<li class="px-1 my-1">
+								<a href="https://www.donedeal.ie" target="_blank" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-blue-600 transition duration-200 ease-in-out">
+									<img class="w-4" src="img/social/d.png" alt="" title="" >
+								</a>
+							</li>
+					<!--		<li class="px-1 my-1">
+								<a href="#" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-blue-600 transition duration-200 ease-in-out">
+									<img class="w-4" src="img/social/linkedin.svg" alt="" title="">
+								</a>
+							</li>
+							<li class="px-1 my-1">
+								<a href="#" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-blue-600 transition duration-200 ease-in-out">
+									<img class="w-4" src="img/social/vk.svg" alt="" title="">
+								</a>
+							</li>
+							<li class="px-1 my-1">
+								<a href="#" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-blue-600 transition duration-200 ease-in-out">
+									<img class="w-4" src="img/social/youtube.svg" alt="" title="">
+								</a>
+							</li>
+							<li class="px-1 my-1">
+								<a href="#" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-blue-600 transition duration-200 ease-in-out">
+									<img class="w-4" src="img/social/odnoklassniki.svg" alt="" title="">
+								</a>
+							</li> -->
+							<!-- ... -->
+						</ul>
+						<!-- Social-footer -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer-Bottom -->
+	</footer>
+	<!-- Footer -->
+
+	<!-- Script -->
+	<script src="js/jquery-v3.5.1.js" type="text/javascript"></script>
+	<script src="js/swiper.js" type="text/javascript"></script>
+	<!-- <script src="js/fancybox.js" type="text/javascript"></script>
+	<script src="js/modal.js" type="text/javascript"></script> -->
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+
+	<script src="js/TweenLite.min.js"></script>
+  <script src="js/EasePack.min.js"></script>
+  <script src="js/demo-1.js"></script>
+</body>
+</html>
